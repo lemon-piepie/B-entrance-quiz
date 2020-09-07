@@ -46,4 +46,9 @@ public class StudentToGroup {
                                     .build();
         return allStudent;
     }
+
+    public static AllStudentDto addOneStudent(StudentDto newStudent){
+        studentList.add(newStudent);
+        return getAllStudent();
+    }
 }
