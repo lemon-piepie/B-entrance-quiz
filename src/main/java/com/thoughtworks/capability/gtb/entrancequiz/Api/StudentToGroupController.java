@@ -18,6 +18,7 @@ public class StudentToGroupController {
         this.studentToGroup = studentToGroup;
     }
 
+
     @GetMapping("/student")
     public List<StudentDto> getAllStudent(){
         return studentToGroup.getAllStudent();
