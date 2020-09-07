@@ -40,14 +40,14 @@ public class StudentToGroup {
         return theStudent;
     }
 
-    public static AllStudentDto getAllStudent(){
+    public static List<StudentDto> getAllStudent(){
         AllStudentDto allStudent = AllStudentDto.builder()
                                     .AllStudents(studentList)
                                     .build();
-        return allStudent;
+        return allStudent.getAllStudents();
     }
 
-    public static AllStudentDto addOneStudent(StudentDto newStudent){
+    public static List<StudentDto> addOneStudent(StudentDto newStudent){
         studentList.add(newStudent);
         return getAllStudent();
     }
